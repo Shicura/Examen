@@ -1,0 +1,407 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1820px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+
+.header {
+    background-color: grey;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.header__main {
+    background-color: transparent;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #fff;
+}
+
+.menu__logo {
+    width: 60px;
+    height: 60px;
+}
+
+.menu__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    font-size: 16px;
+}
+
+.menu__list-link:hover {
+    color: #A790C6;
+    transition: 0.2s;
+}
+
+.menu__btn {
+    max-width: 200px;
+    border-radius: 20px;
+    background-color: #A790C6;
+    padding: 10px 30px;
+    color: #000;
+}
+
+.menu__btn:hover {
+    background-color: blueviolet;
+    transition: 0.2s ease;
+    color: #fff;
+}
+
+/* MAIN */
+
+.main {
+    flex-grow: 1;
+}
+
+.top {
+    min-height: 100vh;
+    background-image: linear-gradient(330deg, rgba(0, 0, 0, 0.00) 31.06%, #000 108.93%), url(../images/Bgtop.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 150px;
+}  
+
+.title {
+    padding-top: 175px;
+    margin-bottom: 30px;
+    max-width: 890px;
+    font-size: 45px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.subtitle {
+    max-width: 635px;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.top__btn-link {
+    max-width: 260px;
+    font-size: 30px;
+    font-weight: 400;
+    background-color: #A790C6;
+    border-radius: 20px;
+    padding: 10px 50px;
+}
+
+.top__btn-link:hover {
+    transition: 0.2s ease;
+    color: white;
+    background-color: blueviolet;
+}
+
+/* ABOUT */
+
+.about {
+    margin-bottom: 130px;
+}
+
+.about__inner {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.title__about {
+    font-size: 55px; 
+    margin-bottom: 80px;
+    font-weight: 700;
+}
+
+.subtitle__about {
+    font-size: 35px;
+    max-width: 970px;
+    margin-bottom: 25px;
+}
+
+.subtitle__text {
+    max-width: 850px;
+    font-size: 23px;
+}
+
+/* ADVANTAGES */
+
+.advantages {
+    margin-bottom: 150px;
+}
+
+.advantages__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 150px;
+}
+
+.advantages__title {
+    font-size: 55px;
+    font-weight: 700;
+    margin-bottom: 80px;
+}
+
+.advantages__list {
+    counter-reset: list;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-items: center;
+}
+
+.advantages__list-item {
+    list-style-type: none;
+    width: 445px;
+    position: relative;
+    margin-left: auto;
+    padding-left: 140px;
+    padding-bottom: 20px;
+    font-size: 17px;
+    
+}
+
+.advantages__list-item::before {
+    content: counter(list);
+    counter-increment: list;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #A790C6;
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.advantages__list-item {
+    max-width: 445px;
+}
+
+/* FOOTER */
+
+.footer {
+    padding: 20px 0;
+    background-color: #A790C6;
+}
+
+.footer__img-social {
+    width: 40px;
+    height: 40px;
+}
+
+.footer__menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.footer__logo {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.footer__menu-text {
+    margin-bottom: 5px;
+}
+
+.footer__menu-policy {
+    text-decoration: underline;
+}
+
+.footer__title {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.footer__phone {
+    display: block;
+}
+
+.footer__title {
+    margin-bottom: 30px;
+}
+
+.footer__social-link {
+    margin-bottom: 18px;
+}
+
+.footer__social-link:last-child {
+    margin-bottom: 0px;
+}
+
+.footer__right-contact {
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.footer__phone {
+    margin-bottom: 10px;
+}
+
+.footer__right-adress {
+    margin-bottom: 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+.footer__right-link:hover {
+    text-decoration: underline;
+}
+
+/* REGISTRATION */
+
+.registration__inner {
+    padding-top: 240px;
+    max-width: 830px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.registration__title {
+    font-size: 45px;
+    font-weight: 700;
+    background-color: #A790C6;
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    color: #fff;
+}
+
+.form {
+    padding-top: 80px;
+    background-color: #aebcdb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+    border-radius: 5px;
+}
+
+.form__input {
+    width: 550px;
+    height: 70px;
+    font-size: 20px;
+    padding-left: 25px;
+    border-radius: 20px;
+    border: 3px solid #A790C6;
+}
+
+.registration__btn {
+    width: 550px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #A790C6;
+    border-radius: 20px;
+    height: 70px;
+    margin-bottom: 70px;
+}
+
+.registration__btn:hover {
+    transition: 0.3s;
+    color: #000;
+    background-color: #fff;
+}
+
+/* Signing */
+
+.signing__inner {
+    padding-top: 240px;
+    max-width: 830px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.signing__title {
+    font-size: 45px;
+    font-weight: 700;
+    background-color: #A790C6;
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    color: #fff;
+}
+
+.form {
+    padding-top: 80px;
+    background-color: #aebcdb;
+    margin-bottom: 100px;
+    border-radius: 5px;
+}
+
+.wrapper__inner {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form__input {
+    width: 550px;
+    height: 70px;
+    font-size: 20px;
+    padding-left: 25px;
+    border-radius: 20px;
+    border: 3px solid #A790C6;
+}
+
+.signing__btn {
+    width: 550px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #A790C6;
+    border-radius: 20px;
+    height: 70px;
+    margin-bottom: 70px;
+}
+
+.signing__btn:hover {
+    transition: 0.3s;
+    color: #000;
+    background-color: #fff;
+}
+
+.signing__tick {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 18px;
+}
